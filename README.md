@@ -25,7 +25,8 @@ To run the tests, follow these steps:
 Clone the repository to your local machine.
 Navigate to the directory containing the test scripts.
 Run the tests using the following command:
-python <test_file>.py
+ python3 -m pytest test_store.py --html=$(date +"%Y-%m-%d_%H-%M-%S")_report.html
+
 
 Replace <test_file> with the name of the test file you want to run (test_petstore, test_user, or test_script). This will run all the tests in the specified file and generate an HTML report with the results. The report will be named report_<timestamp>.html, where <timestamp> is the current date and time.
 
